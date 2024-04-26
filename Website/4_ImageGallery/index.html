@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Image Gallery</h1>
+  <div id="gallery">
+    <div class="thumbnail">
+      <img src="image1.png" alt="Image 1" onclick="openModal(this)">
+    </div>
+    <div class="thumbnail">
+      <img src="image2.png" alt="Image 2" onclick="openModal(this)">
+    </div>
+    <div class="thumbnail">
+        <img src="image3.png" alt="Image 1" onclick="openModal(this)">
+      </div>
+      <div class="thumbnail">
+        <img src="image4.png" alt="Image 2" onclick="openModal(this)">
+      </div>
+    <!-- Add more thumbnails here -->
+  </div>
+  
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-image">
+    <div id="caption"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

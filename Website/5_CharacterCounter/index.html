@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Character Counter</title>
+</head>
+<body>
+  <h1>Character Counter</h1>
+  <textarea id="textInput" rows="5" cols="30" oninput="countChars()"></textarea>
+  <p>Character Count: <span id="charCount">0</span></p>
+
+  <script>
+    function countChars() {
+      var text = document.getElementById("textInput").value;
+      var charCount = text.length;
+      document.getElementById("charCount").innerHTML = charCount;
+    }
+  </script>
+</body>
+</html>
